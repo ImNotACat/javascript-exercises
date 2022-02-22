@@ -1,5 +1,11 @@
-const add = function() {
-	
+const add = function(a, b) {
+  if (typeof a === "undefined"){
+    a = 0;
+  }
+  if (typeof b === "undefined"){
+    b = 0;
+  }  
+	return (a + b);
 };
 
 const subtract = function() {
