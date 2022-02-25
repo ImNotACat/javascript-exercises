@@ -33,23 +33,27 @@ const sum = function(numbers) {
 };
 
 const multiply = function(numbers) {
-  for (let i = 0; i < numbers.length; i++) {
-    if (i = 0) {
-      result = numbers[i];
-    }
-    else {
-      result = result * numbers[i];
-    }
-  }
+  let result = numbers.reduce (
+    (previous, current) => previous * current
+  );
   return result;
 };
 
-const power = function() {
-	
+const power = function(a, b) {
+	let result = Math.pow(a, b);
+  return result;
 };
 
-const factorial = function() {
-	
+const factorial = function(num) {
+  let result = 1;
+  if (num === 0) {
+    return result;}
+  else {
+    for (let i = num; i > 0; i--) {
+      result = result * i;
+    }
+    return result;
+  }
 };
 
 // Do not edit below this line
